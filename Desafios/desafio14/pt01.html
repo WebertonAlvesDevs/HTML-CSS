@@ -4,70 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <style>
         BODY{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        caption{
-         border: 1px solid black;
-         font-weight: bold;
-        }
-        table{
+           font-family: Arial, Helvetica, sans-serif;
+       }
+       caption{
+        border: 1px solid black;
+        font-weight: bold;
+       }
+       table{
+           
+           width: 500px;
         
-            width: 600;
-            border-collapse: collapse;
+           border-collapse: collapse;
+
+       }
+       td{
+           border: 1px solid black;
+           padding: 10px;
         }
-        td{
+        th{
+            text-align: center;
             border: 1px solid black;
-            padding: 10px;
-         }
-         th{
-             text-align: center;
-             border: 1px solid black;
-             font-family: Arial, Helvetica, sans-serif;
-        
-         }
-    </style>
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+      .medi{
+        background-color: gray;
+        color: white;
+        text-align: left;
+        padding-left: 1.5em;
+      }
+    .media{
+        background-color: gray;
+        color: white;
+    }
+    thead{
+        background-color: gray;
+        color: white;
+    }
+       
+   </style>
+    
+ 
 <body>
     <table>
-        <caption>Notas</caption>
+        <caption>NOTAS</caption>
         <thead>
             <tr>
-                <th colspan="2">Área</th>
-                <th colspan="2">Displinas</th>
-                <th>Notas</th>
-                <th colspan="2">Média</th>
+                
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2"scope="col">Disciplinas</th>
+                <th colspan="2"scope="col">Notas</th>
+                <th rowspan="2"scope="col">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
+
         <tbody>
+            
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matematica</td>
-                <td>Fisica</td>
-                <td>Quimica</td>
-                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <td>Matematica</td>
                 <td>Fisica</td>
-                <td>Quimica</td>
-                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <td>Matematica</td>
-                <td>Fisica</td>
                 <td>Quimica</td>
-                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
             </tr>
             <tr>
-                <td>Matematica</td>
-                <td>Fisica</td>
-                <td>Quimica</td>
                 <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="4" class="medi">Média de Exatas</th>
+                <td class="media">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup" >Humanas</th>
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+
+            </tr>
+            <tr>
+                <th colspan="4" class="medi">Média de Humanas</th>
+                <td class="media">0.0</td>
             </tr>
         </tbody>
     </table>
+    
     
 </body>
 </html>
