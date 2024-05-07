@@ -1,0 +1,25 @@
+@charset "UTF8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    height: 500px;
+    gap: 10px;
+}
+.flez-iten{
+    color: white;
+    background-color: red;
+    margin: 10px;
+
+}
+.flex-iten:nth-child(3){
+    font-size: 40px;
+}
