@@ -1,2 +1,5 @@
 @charset "UTF-8";
 /* Modo retrato (portrait)*/
+body{
+   background-image: url(.);
+}
